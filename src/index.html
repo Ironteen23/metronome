@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="index.css" />
+    <script defer src="render.js"></script>
+  </head>
+  <body>
+    <h1>💖 Hello World!</h1>
+    <p>Welcome to your Electron application.</p>
+
+    <button id="startBtn"  onclick="playBeat()">Start</button>
+
+    <button id="stopBtn" onclick="stopBeat()">Stop</button>
+
+
+    <div class="round" id="beat">A</div>
+
+    <div class="counter">
+      
+      <button class="add" onclick="incSpeed()">+1</button>
+
+      <div id="count" class="count">0</div>
+
+      <button class="subtract" onclick="decSpeed()">-1</button>
+
+
+    </div>
+
+    
+
+  </body>
+</html>
