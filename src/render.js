@@ -11,6 +11,10 @@ function incSpeed()
    sahil = sahil +1000;
 
     document.getElementById("count").innerText = sahil;
+
+    stopBeat();
+
+    playBeat();
 }
 
 
@@ -20,6 +24,12 @@ function decSpeed()
    sahil = sahil - 1000;
 
     document.getElementById("count").innerText = sahil;
+
+    stopBeat();
+
+    playBeat();
+
+
 }
 
 
@@ -29,8 +39,11 @@ function playBeat()
     let id = null;
     const elem = document.getElementById("beat");
     let pos=350;
+
+    var userspeed = 10000 - sahil;
+    var u = userspeed/1000;
     
-    id = setInterval(fspeed,2);
+    id = setInterval(fspeed,u);
 
     
 
