@@ -1,5 +1,28 @@
-var sahil = 0;
+var sahil = 1000;
 var my;
+// var a =0;
+// var b;
+
+ let mySound = new Audio('mouseclick.wav')
+
+
+function incSpeed()
+{
+   sahil = sahil +1000;
+
+    document.getElementById("count").innerText = sahil;
+}
+
+
+
+function decSpeed()
+{
+   sahil = sahil - 1000;
+
+    document.getElementById("count").innerText = sahil;
+}
+
+
 
 function playBeat()
 {   
@@ -7,29 +30,24 @@ function playBeat()
     const elem = document.getElementById("beat");
     let pos=350;
     
-    id = setInterval(fspeed,0.1);
-
-    const a = document.getElementById("stopBtn");
-
-
-   
-
-function fspeed(){
+    id = setInterval(fspeed,2);
 
     
 
-    if(a.innerHTML=='a')
+function fspeed(){
+
+    if(document.getElementById("stopBtn").innerHTML==1)
     {   
         clearInterval(id);
         pos=350;
-        a.innerHTML='Stop';
+        document.getElementById("stopBtn").innerHTML='Stop';
     }
 
    
 
     if(pos==700)
     {
-
+        mySound.play();
         pos=350;
     }
     else
@@ -37,12 +55,15 @@ function fspeed(){
     pos++;
     elem.style.left = pos +"px";
     }
+
+
 }
+
 }
 
 function stopBeat()
 {
-    document.getElementById("stopBtn").innerHTML= 'a';
+    document.getElementById("stopBtn").innerHTML=1;
 }
 
 // function speed()
@@ -50,21 +71,3 @@ function stopBeat()
 //     const a = document.getElementById("")
 // }
 
-function incSpeed()
-{
-   sahil = sahil +1;
-
-    document.getElementById("count").innerText = sahil;
-}
-
-setTimeout(function(){
-     let mySound = new Audio('mouseclick.wav')
-    mySound.play()
-    },5000);
-
-function decSpeed()
-{
-   sahil = sahil - 1;
-
-    document.getElementById("count").innerText = sahil;
-}
