@@ -12,6 +12,64 @@ body{
   /* background-repeat: no-repeat; */
 }
 
+
+h1{
+
+  color:greenyellow
+
+}
+
+.btnstart
+{
+  width:80px;
+  height:30px;
+  /* background-color: burlywood;
+  border-radius: 10px; */
+
+  background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.8);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    color:brown;
+    font-size: 1.1rem;
+  /* border:none; */
+  /* box-shadow: 2px 2px white ; */
+}
+
+.btnstart:hover{
+
+  background: #25D066;
+}
+
+.btnstop {
+  width: 80px;
+  height: 30px;
+  /* background-color: burlywood;
+  border-radius: 10px; */
+
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.8);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  color: brown;
+  font-size: 1.1rem;
+  /* border:none; */
+  /* box-shadow: 2px 2px white ; */
+}
+
+.btnstop:hover {
+
+  background: red;
+}
+
+
+
 .round{
   border-radius: 50%;
   background-color: red;
@@ -28,6 +86,8 @@ body{
   margin-top:50px;
   font-size: 2rem;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  /* background-color: aqua; */
+  color:aliceblue;
   
 }
 
@@ -50,17 +110,18 @@ body{
 
 .stopper{
 
-  position: absolute;
+  /* position: absolute; */
   /* margin-bottom: 25px;
   margin-left:350px;
   width: 10vw; */
-  left:750px;
-  top:320px;
-  background-color: aliceblue;
+  margin-left:385px;
+  margin-top:40px;
+  /* background-color: aliceblue; */
   transform: skew(70deg,50deg);
   width:3vw;
   height: 8px;
-  background-color: darkred;
+  background-color: burlywood;
+  /* color:white; */
   /* margin-top:75px; */
   /* background-color: white; */
 

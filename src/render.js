@@ -1,4 +1,4 @@
-var sahil = 1000;
+var sahil = 50;
 var my;
 // var a =0;
 // var b;
@@ -8,7 +8,7 @@ var my;
 
 function incSpeed()
 {
-   sahil = sahil +1000;
+   sahil = sahil +5;
 
     document.getElementById("count").innerText = sahil;
 
@@ -21,7 +21,7 @@ function incSpeed()
 
 function decSpeed()
 {
-   sahil = sahil - 1000;
+   sahil = sahil - 5;
 
     document.getElementById("count").innerText = sahil;
 
@@ -38,30 +38,31 @@ function playBeat()
 {   
     let id = null;
     const elem = document.getElementById("beat");
-    let pos=350;
+    let pos=0;
 
-    var userspeed = 10000 - sahil;
-    var u = userspeed/1000;
+    // var a = 0.35;
+    //  myt = sahil/60;
+    // var u = a/myt;
     
-    id = setInterval(fspeed,u);
+    id = setInterval(fspeed,2.1);
 
     
 
 function fspeed(){
 
-    if(document.getElementById("stopBtn").innerHTML==1)
+    if(document.getElementById("stopBtn").innerHTML ==1)
     {   
         clearInterval(id);
-        pos=350;
+        pos=0;
         document.getElementById("stopBtn").innerHTML='Stop';
     }
 
    
 
-    if(pos==700)
+    if(pos==350)
     {
         mySound.play();
-        pos=350;
+        pos=0;
     }
     else
     {

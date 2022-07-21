@@ -7,12 +7,12 @@
     <script defer src="render.js"></script>
   </head>
   <body>
-    <h1>💖 Hello World!</h1>
-    <p>Welcome to your Electron application.</p>
+    <h1>METRONOME</h1>
+    <!-- <p>TUNE UP N Practice </p> -->
 
-    <button id="startBtn"  onclick="playBeat()">Start</button>
+    <button id="startBtn"  class="btnstart" onclick="playBeat()">Start</button>
 
-    <button id="stopBtn" onclick="stopBeat()">Stop</button>
+    <button id="stopBtn"    class="btnstop" onclick="stopBeat()">Stop</button>
 
     <div class="roundContainer">
     <div class="round" id="beat">A</div>
@@ -22,11 +22,11 @@
 
     <div class="counter">
       
-      <button class="add" onclick="incSpeed()">+1</button>
+      <button class="add" onclick="incSpeed()">+5</button>
 
-      <div id="count" class="count">1000</div>
+      <div id="count" class="count">50</div>
 
-      <button class="subtract" onclick="decSpeed()">-1</button>
+      <button class="subtract" onclick="decSpeed()">-5</button>
 
 
     </div>
